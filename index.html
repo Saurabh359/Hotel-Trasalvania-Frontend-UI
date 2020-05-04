@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Trile Site</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<style type="text/css">
+	.icon-bar{
+		background-color: black;
+	  }
+	@media only screen and (max-width: 760px) {
+	#myNavbar{
+		        background-color: 	#696969;
+	         }
+	    .page-logo{
+	    			height: 40%;
+	    			width: 50%;
+	    			margin: auto;
+	            }     
+	}
+	.navbar.scrolled{	
+      background-color: #696969;
+      transition: background-color 1s linear;
+    }
+    .logo{
+    	display: flex;
+    } 
+
+.menu-block { margin-bottom: 30px; }
+.menu-title { border-bottom: 3px solid #e0e6e3; margin-bottom: 36px; padding-bottom: 10px; }
+.menu-content { border-bottom: 1px solid #e0e6e3; margin-bottom: 30px; }
+.dish-img { }
+.dish-content { margin-top: 12px; margin-bottom: 40px; }
+.dish-meta { font-size: 12px; text-transform: uppercase; display: block; width: 210px; line-height: 1.7; }
+.dish-title { margin-bottom: 6px; font-size: 15px; text-transform: uppercase; font-weight: 500; position: relative; }
+.dish-price { position: absolute; right: 16px; top: 0px; font-size: 26px; color: #e03c23; font-weight: 500; font-family: 'Zilla Slab', serif; }
+.well-block .dish-meta { width: 100%; }
+.well-block .dish-price { font-size: 26px; color: #e03c23; font-weight: 500; font-family: 'Zilla Slab', serif; position: inherit; } 
+
+</style>
+<script type="text/javascript">
+	$(window).scroll(function(){
+	$('nav').toggleClass('scrolled', $(this).scrollTop() > 70);
+});
+</script>
+</head>
+<body>
+<div class="jumbotron"> 	
+  <nav id="myNavbar" class="navbar navbar-fixed-top" style="padding-top: 20px;" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle bg-red" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="logo">
+            <img src="Assets\l2.png" style="height: 80px; width: 60px;">
+            <h3 style="padding-top: 20px;">Trasalvania</h3>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-home"></span>  Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Goals</a></li>
+                <li><form class="form-inline">
+                   <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                   <button class="btn btn-outline-success my-2 my-sm-0 glyphicon glyphicon-search" type="submit"></button>
+                </form></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<br><br>
+<div class="container">
+        <div class="row">
+           <div class="col-sm-12 col-md-5" style="text-align: center;">
+           	<br><br><br><br><br><br><br><br>
+           	<h1 style="font-family: georgia; color: black;">Hotel</h1>
+           <h1 style="font-family: georgia; color: black;">Trasalvania</h1>
+          </div>
+          <br><br>
+          <div class="page-logo col-sm-12 col-md-5 col-md-offset-2">
+           <img src="Assets\l3.png" style="height: 90%; width: 90%;">
+          </div>
+          </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-8" style="background-color:lavender; padding-top: 40px; padding-bottom: 20px; height: 470px; padding-left: 40px;">
+            <h1>Benifits</h1>
+            <ul>
+                <li>Set Goals</li>
+                <li>Receive customized notifications</li>
+                <li>Get tips from experts and coaches</li>
+            </ul>
+        </div>
+        <div class="col-sm-12 col-md-4" style="background-color:lavenderblush;  padding-top: 20px; padding-bottom: 20px;">
+            <h2>Login</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" class="form-control" id="city" aria-describedby="emailHelp" placeholder="Enter your city" required>
+                </div>
+                <div class="form-group">
+                    <label for="Email">Email address</label>
+                    <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="InputPassword">Password</label>
+                    <input type="password" class="form-control" id="InputPassword" placeholder="Password" required>
+                </div>
+                <div class="form-check">
+                     <input type="checkbox" class="form-check-input" id="check" required>
+                     <label class="form-check-label" for="check">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>        
+        </div>        
+    </div>
+  <div class="container" style="margin-top: 100px;">  
+  <h1>Blockquotes</h1>
+  <p>The blockquote element is used to present content from another source:</p>
+  <blockquote>
+    <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+    <footer>From WWF's website</footer>
+  </blockquote>
+  </div>
+  <div class="container" style="margin-top: 100px;">
+     <h2>Image Gallery</h2>
+  <p>Click on the images to see it in full size:</p>            
+  <div class="row">
+    <div class="col-md-4" style="background-image: url(Assets/Hotel.webp); background-size: 80% 100%;">
+      <a href="Assets\hotel.webp" class="thumbnail" style="background:transparent; height: 250px;">
+        <p>Hotel inside view: full of zombies and ghost</p>   
+      </a>
+    </div>
+    <div class="col-md-4" style="background-image: url(Assets/hotel1.jpg); background-size: 100% 100%;">
+      <a href="Assets\hotel1.jpg" class="thumbnail" style="background:transparent; height: 250px;">
+        <p>Hotel inside view: full of zombies and ghost</p>   
+      </a>
+    </div>
+    <div class="col-md-4" style="background-image: url(Assets/Hotel.webp); background-size: 80% 100%;">
+      <a href="Assets\hotel.webp" class="thumbnail" style="background:transparent; height: 250px;">
+        <p>Hotel inside view: full of zombies and ghost</p>   
+      </a>
+    </div>
+  </div>
+ </div> 
+ <div class="container" style="margin-top: 100px; background-color: lavender;"> 
+  <div class="row">
+  	    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                    <div class="page-section">
+                        <h1 class="page-title" style="font-family: algerian;">Food Menu</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- starter -->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb40">
+                    <div class="menu-block">
+                        <h3 class="menu-title">Starter</h3>
+                        <div class="menu-content">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                    <div class="dish-img"><a href="#"><img src="Assets/dish1.jpeg" width="95%" alt="" class="img-circle"></a></div>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                    <div class="dish-content">
+                                        <h5 class="dish-title"><a href="#">Aloo and Dal ki Tikki</a></h5>
+                                        <span class="dish-meta">Onion  /  Tomato</span>
+                                        <div class="dish-price">
+                                        <p>$10</p>
+                                    </div>
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="menu-content">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                    <div class="dish-img"><a href="#"><img src="Assets/dish1.jpg" width="95%"  alt="" class="img-circle"></a></div>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                    <div class="dish-content">
+                                        <h5 class="dish-title"><a href="#">Cheese Balls</a></h5>
+                                        <span class="dish-meta">puffed corn  /  cheese-flavored  </span>
+                                        <div class="dish-price">
+                                        <p>$8</p>
+                                    </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-content">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                    <div class="dish-img"><a href="#"><img src="Assets/dish1.jpeg" width="95%"  alt="" class="img-circle"></a></div>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                    <div class="dish-content">
+                                        <h5 class="dish-title"><a href="#">Veg Crispy</a> </h5>
+                                        <span class="dish-meta">Ginger garlic /  Black pepper</span>
+                                        <div class="dish-price">
+                                        <p>$12</p>
+                                    </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.starter -->
+                <!-- Soup -->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb40">
+                    <div class="menu-block">
+                        <h3 class="menu-title">Soup</h3>
+                        <div class="menu-content">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                    <div class="dish-img"><a href="#"><img src="Assets/dish1.jpg" width="95%" alt="" class="img-circle"></a></div>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                    <div class="dish-content">
+                                        <h5 class="dish-title"><a href="#">Minestrone</a></h5>
+                                        <span class="dish-meta"> beans  / onions celery / carrots</span>
+                                        <div class="dish-price">
+                                        <p>$15</p>
+                                    </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-content">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                    <div class="dish-img"><a href="#"><img src="Assets/dish1.jpeg" width="95%"  alt="" class="img-circle"></a></div>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                    <div class="dish-content">
+                                        <h5 class="dish-title"><a href="#">Tomato soup</a></h5>
+                                        <span class="dish-meta">Cheesiy   / Creamy  /  Sweet</span>
+                                         <div class="dish-price">
+                                        <p>$14</p>
+                                    </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-content">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                    <div class="dish-img"><a href="#"><img src="Assets/dish1.jpg" width="95%"  alt="" class="img-circle"></a></div>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                    <div class="dish-content">
+                                        <h5 class="dish-title"><a href="#">Cream of broccoli</a> </h5>
+                                        <span class="dish-meta"> broccoli /  milk  / cream </span>
+                                        <div class="dish-price">
+                                        <p>$9</p>
+                                    </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.soup -->
+                <!-- main course -->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb40">
+                    <div class="menu-block">
+                        <h3 class="menu-title">Main Course</h3>
+                        <div class="menu-content">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                    <div class="dish-img"><a href="#"><img src="Assets/dish1.jpeg" width="95%"  alt="" class="img-circle"></a></div>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                    <div class="dish-content">
+                                        <h5 class="dish-title"><a href="#">Biryani</a></h5>
+                                        <span class="dish-meta"> Onion  /  Tomato</span>
+                                        <div class="dish-price">
+                                        <p>$14</p>
+                                    </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-content">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                    <div class="dish-img"><a href="#"><img src="Assets/dish1.jpg" width="95%"  alt="" class="img-circle"></a></div>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                    <div class="dish-content">
+                                        <h5 class="dish-title"><a href="#">Paneer Butter Masala</a></h5>
+                                        <span class="dish-meta">Aloo Masala  /  Aloo Palak </span>
+                                        <div class="dish-price">
+                                        <p>$11</p>
+                                    </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-content">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                    <div class="dish-img"><a href="#"><img src="Assets/dish1.jpeg" width="95%"  alt="" class="img-circle"></a></div>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                    <div class="dish-content">
+                                        <h5 class="dish-title"><a href="#">Chole Bhature</a> </h5>
+                                        <span class="dish-meta"> Rice Soft Idli  /  Ragi idli  /  Oats Idli </span>
+                                        <div class="dish-price">
+                                        <p>$8</p>
+                                    </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+  </div>
+ </div>
+</div>
+</div>
+ <div class="container" style="margin-top: 100px;">  
+   <div class="row">
+		<div class="col-xs-12">
+			<h2>HTML</h2>
+			<p>HTML is a markup language that is used for creating web pages. The HTML tutorial section will help you understand the basics of HTML, so that you can create your own web pages or website.</p>
+			<p><a href="http://www.tutorialrepublic.com/html-tutorial/" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
+		</div>
+		<div class="col-xs-12">
+			<h2>CSS</h2>
+			<p>CSS is used for describing the presentation of web pages. The CSS tutorial section will help you learn the essentials of CSS, so that you can fine control the style and layout of your HTML document.</p>
+			<p><a href="http://www.tutorialrepublic.com/css-tutorial/" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
+		</div>
+		<div class="col-xs-12">
+			<h2>Bootstrap</h2>
+			<p>Bootstrap is a powerful front-end framework for faster and easier web development. The Bootstrap tutorial section will help you learn the techniques of Bootstrap so that you can quickly create your own website.</p>
+			<p><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
+		</div>
+	</div> 
+</div>
+
+<div class="fluid-container">
+	  <div class="row" style="background-color:lavender;">
+                <div style="margin: auto; text-align: center;">
+                  <h2 >Branches Across the World</h2>
+                </div>
+      </div>
+
+                <div class="row">
+              
+                <div class="col-lg-4">
+
+                    <div class="card">
+                      <img class="card_img-top" src="Assets/loc1.jpg">
+                        <div class="card-body">
+                          <h5 class="card-title">Las Vegas  <span class="badge badge-success">9.5<i class="material-icons" style="vertical-align:middle;font-size: smaller;">rating</i></span></h5>
+                          <p class="card-text">$ 6,203.64 billion<i class="material-icons" style="vertical-align:middle;color:maroon;">new_releases</i>
+                            <br><br>
+                            Although coconut oil is about 90% saturated fat, it does contain small amounts of mono and polyunsaturated fats as well. ...
+                             Summary: Coconut of mono and 
+  
+                          </p>
+                        </div>
+                      </div>
+
+                </div> 
+                
+                <div class="col-lg-4">
+
+                  <div class="card" >
+                    <img class="card_img-top" src="Assets/loc2.jpg" height="200">
+                      
+                      <div class="card-body">
+                        <h5 class="card-title">Goa <span class="badge badge-warning">9.3 <i class="material-icons" style="vertical-align:middle;font-size: smaller;">rating</i></span></h5>
+                        <p class="card-text">$ 5,902.45 billion 
+                        <br><br>
+                        Maui Moisture shampoo, conditioner & hair products are vegan, gluten-free, paraben-free, and 
+                        silicone-free, offering wholesome beauty for all hair types
+                        Explore and shop the 100% aloe vera-based Maui Moisture line of shampoo, conditioner, treatments & hair products.
+                      </p>
+                    </div>
+                  </div>
+
+                </div> 
+                <div class="col-lg-4">
+
+                  <div class="card" >
+                  
+                    <img class="card_img-top" src="Assets/loc3.jpg" height="200">
+                    <div class="card-body">
+                      <h5 class="card-title">Abu Dhabi<span class="badge badge-danger">9.7<i class="material-icons" style="vertical-align:middle;font-size: smaller;">rating</i></span></h5>
+                      <p class="card-text">$ 6,801.92 billion <i class="material-icons" style="vertical-align:middle;color:maroon;">new_releases</i>
+                        <br><br>
+                        Small batch coffee roaster based in West Michigan. We prioritize roasting the
+                         best possible coffee while also donating our profits to counsel human trafficking .
+                         
+
+                      </p>
+                    </div>
+                  </div>
+
+                </div>   
+
+             
+            </div>
+
+
+    <div class="row">
+        <div class="col-sm-12">
+            <footer>
+                <p>© Copyright 2020 </p>
+            </footer>
+        </div>
+    </div>
+</div>    
+</body>
+</html>
